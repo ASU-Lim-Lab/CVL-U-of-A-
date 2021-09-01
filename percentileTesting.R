@@ -12,7 +12,7 @@ START <- 0.1
 END <- 0.9
 STEP <- 0.1
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 
 #ftable <- read.csv("rpkNonMaskedDirtyTable.txt", row.names=1, header=TRUE, sep='\t')
 ftable <- read.csv("phages/phageRpkNonMaskedDirtyTable.txt", row.names=1, header=TRUE, sep='\t')
