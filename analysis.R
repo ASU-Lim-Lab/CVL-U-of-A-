@@ -3,7 +3,7 @@ library(reshape2)
 library(ggplot2)
 library(ggpubr)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 
 ftable <- read.csv("rpkNonMaskedDirtyTable.txt", row.names=1, header=TRUE, sep='\t')
 
@@ -69,7 +69,7 @@ ggarrange(p1, p2, p3, nrow = 1,
           legend = "bottom")
 
 ##### Mask table #####
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 
 ftable <- read.csv("rpkNonMaskedDirtyTable.txt", row.names=1, header=TRUE, sep='\t')
 
@@ -83,7 +83,7 @@ library(decontam)
 library(phyloseq)
 library(gridExtra)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 
 ftable <- read.csv("rpkMaskedDirty.txt", row.names=1, header=TRUE, sep='\t')
 data <- read.csv("CVLMetadata.txt", row.names = 1, header=TRUE, sep = '\t')
@@ -121,7 +121,7 @@ library(gridExtra)
 library(ggplot2)
 library(rich)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 ftable <- read.csv("rpkMaskedClean.txt", row.names=1, header=TRUE, sep='\t')
 
 data <- read.csv("CVLMetadata.txt", row.names = 1, header=TRUE, sep = '\t')
@@ -203,7 +203,7 @@ write.table(t(familyRelativeAbundance), "familyRelativeAbundanceCounts.txt", sep
 library(gplots)
 library(RColorBrewer)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 ftable <- read.csv("rpkMaskedClean.txt", row.names=1, header=TRUE, sep='\t')
 
 data <- read.csv("CVLMetadata.txt", row.names = 1, header=TRUE, sep = '\t')
