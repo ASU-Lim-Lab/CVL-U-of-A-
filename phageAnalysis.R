@@ -3,7 +3,7 @@ library(reshape2)
 library(ggplot2)
 library(ggpubr)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 
 ftable <- read.csv("phages/phageRPKNonMaskedDirtyTable.txt", row.names=1, header=TRUE, sep='\t')
 
@@ -69,7 +69,7 @@ ggarrange(p1, p2, p3, nrow = 1,
           legend = "bottom")
 
 ##### Mask table #####
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 
 ftable <- read.csv("phages/phageRPKNonMaskedDirtyTable.txt", row.names=1, header=TRUE, sep='\t')
 
@@ -84,7 +84,7 @@ library(phyloseq)
 library(gridExtra)
 library(ggplot2)
 
-setwd("C:/Users/ptskidmo/Dropbox (ASU)/Lim Lab/Projects/Cervicovaginal lavage (U of A)/CVL/Contigs/allContigsAnalysis")
+setwd("/path/to/working-directory/")
 
 ftable <- read.csv("phages/phageRpkMaskedDirty.txt", row.names=1, header=TRUE, sep='\t')
 data <- read.csv("CVLMetadata.txt", row.names = 1, header=TRUE, sep = '\t')
@@ -123,7 +123,7 @@ library(gridExtra)
 library(ggplot2)
 library(rich)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 ftable <- read.csv("phages/phageRpkMaskedClean.txt", row.names=1, header=TRUE, sep='\t')
 
 data <- read.csv("CVLMetadata.txt", row.names = 1, header=TRUE, sep = '\t')
@@ -205,7 +205,7 @@ write.table(t(familyRelativeAbundance), "phages/phageFamilyRelativeAbundanceCoun
 library(gplots)
 library(RColorBrewer)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 ftable <- read.csv("phages/phageRpkMaskedClean.txt", row.names=1, header=TRUE, sep='\t')
 
 data <- read.csv("CVLMetadata.txt", row.names = 1, header=TRUE, sep = '\t')
@@ -345,7 +345,7 @@ write.table(finalGITable, "phages/lefse/giHeatmapTable.txt", sep='\t', col.names
 library(gplots)
 library(RColorBrewer)
 
-setwd("E:\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 ftable <- read.csv("phages/phageRpkMaskedClean.txt", row.names=1, header=TRUE, sep='\t')
 
 data <- read.csv("CVLMetadata.txt", row.names = 1, header=TRUE, sep = '\t')
@@ -416,7 +416,7 @@ legend(x="left", legend=levels(lacFamily),
 library(corrplot)
 library(gplots)
 
-setwd("C:\\Users\\ptskidmo\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 ftable <- read.csv("phages//bacteriaPhageInteraction/correlation.txt", row.names=1, header=TRUE, sep='\t')
 ftable <- ftable[rowSums(ftable) != 0,]
 
@@ -488,7 +488,7 @@ library(ggplot2)
 library(reshape2)
 library(ggforce)
 
-setwd("C:\\Users\\ptskidmo\\Dropbox (ASU)\\Lim Lab\\Projects\\Cervicovaginal lavage (U of A)\\CVL\\Contigs\\allContigsAnalysis")
+setwd("/path/to/working-directory/")
 ftable <- read.csv("phages//bacteriaPhageInteraction/correlation.txt", row.names=1, header=TRUE, sep='\t')
 ftable <- ftable[rowSums(ftable) != 0,]
 
