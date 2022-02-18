@@ -1,3 +1,3 @@
-# CVL (U of A)
+# R scripts for manuscript: Cervicovaginal DNA virome alterations are associated with genital inflammation and microbiota composition
 
-This repository contains the R scripts used to analyze this dataset on the cervicovaginal lavage of women from the Phoenix, Arizona area.
+This repository contains R scripts used in this study investigating the the cervicovaginal virome in the context of bacterial microbiome alterations, inflammation, and HPV infection.
