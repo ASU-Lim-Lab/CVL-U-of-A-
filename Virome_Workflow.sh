@@ -48,7 +48,7 @@ samtools view -h -F 0x4 /path/to/SampleNamesecondaryRemoved.sam > /path/to/Sampl
 samtools view -S -b /path/to/SampleNamesecondaryUnMappedRemoved.sam > /path/to/SampleNamesecondaryUnMappedRemoved.bam;
 samtools sort /path/to/SampleNamesecondaryUnMappedRemoved.bam > /path/to/SampleNamesecondaryUnMappedRemoved_sorted.bam;
 samtools index /path/to/SampleNamesecondaryUnMappedRemoved_sorted.bam;
-samtools idxstats //path/to/SampleNamesecondaryUnMappedRemoved_sorted.bam > /path/to/SampleNamecounts.txt;
+samtools idxstats /path/to/SampleNamesecondaryUnMappedRemoved_sorted.bam > /path/to/SampleNamecounts.txt;
 
 ## BLASTx parameters ##
 blastx -db /path/to/RefSeqViralDB -query /path/to/allContigs.fa -evalue 1e-3 -num_threads 28 -max_target_seqs 1 -outfmt "6 qseqid sseqid evalue bitscore pident nident qcovs length mismatch qlen slen" -out /path/to/concatenatedContig.blastx.out
